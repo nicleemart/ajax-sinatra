@@ -1,0 +1,21 @@
+.style{
+	display: flex;
+	flex-direction: column;
+}
+#question{
+padding-bottom: 10px;
+}
+.answersRow{
+	display: flex;
+	flex-direction: row;
+}
+#one{
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+#two{
+	padding-right: 10px;
+}
+#three{
+	padding-right: 10px;
+}
