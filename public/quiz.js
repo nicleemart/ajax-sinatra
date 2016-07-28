@@ -23,14 +23,13 @@ window.addEventListener("load", function() {
         getJson.onreadystatechange = function() {
             if (getJson.readyState == 4 && getJson.status == 200) {
                 var myArr = JSON.parse(getJson.responseText);
-                console.log("INCREMENTING currentQuestionNum");
                 currentQuestionNum += 1;
                 myFunction(myArr);
             }
         };
 
 
-    getJson.open("GET", "quiz.txt", true);
+    getJson.open("GET", "/quiz.txt", true);
     getJson.send();
 
     };
@@ -82,7 +81,7 @@ window.addEventListener("load", function() {
 
         request.addEventListener("load", function(results) {
 
-            
+            debugger;
             output.innerHTML = results.target.responseText;
             output.style.display = "block";
 
@@ -91,7 +90,7 @@ window.addEventListener("load", function() {
 
         });
 
-        request.open("get", "answer.php?answer=" + answer + "&question=" + currentQuestionNum);
+        request.open("get", `/checkAnswer/${answer}/${currentQuestionNum}`);
         request.send();
 
     });
