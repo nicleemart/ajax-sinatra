@@ -1,0 +1,5 @@
+[
+    {"questions":"Which of these is not a Koopaling?", "choice1":"Iggy","choice2":"Pikachu","choice3":"Lemmy","choice4":"Wendy"},
+    {"questions":"Which of these is not a power up Mario uses?", "choice1":"Mushroom","choice2":"Tanooki", "choice3":"Fire Flower", "choice4":"Wombat"},
+    {"questions":"Who is Mario's brother?", "choice1":"Luigi","choice2":"Joe","choice3":"Slippery Pete","choice4":"Roy"}
+]
